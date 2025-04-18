@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>员工</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+	<link href="/Skin/default/Style/common.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+	
+</head>
+<body class="gray-bg">
+	
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+       
+		
+
+        <div class="ibox float-e-margins">
+            <div class="row row-lg">
+                <div class="col-sm-12">
+                    <div class="ibox-title">
+                        <h5>数据查询</h5>
+                    </div>
+                    <div class="col-sm-12 ibox-content form-horizontal">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">手机号：</label>
+                                <div class="col-sm-7">
+                                    <div class="row">
+									<form method="post" action="?action=shouji">
+                                        <div class="input-group">
+                                            <input type="text" name="s" class="form-control" required placeholder="搜索手机号">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-info" type="submit">搜素</button>
+                                            </span>
+                                        </div>
+									</form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">姓名：</label>
+                                <div class="col-sm-7">
+                                    <div class="row">
+									<form method="post" action="?action=xingming">
+                                        <div class="input-group">
+                                            <input type="text" name="s" class="form-control" required placeholder="搜索姓名">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-info" type="submit">搜素</button>
+                                            </span>
+                                        </div>
+									</form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ibox float-e-margins">
+            <div class="row row-lg">
+                <div class="col-sm-12">
+                    <div class="ibox-title">
+                        <h5>教师列表</h5>
+                        <div class="btn-group pull-right" role="group" aria-label="...">
+                            <button type="button" class="btn_user_add btn  btn-info">新增员工</button>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th >编号</th>
+                                    <th>姓名</th>
+                                   
+                                    <th>手机号</th>
+                                    <th >部门</th>
+                                    <th >组</th>
+                                    <th >企业微信ID</th>
+                                    <th >值班琴房</th>
+                                    <th >角色</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                		<tr>
+			<td>1</td>
+			<td>刘奇</td>		
+			<td>18766409464</td>
+			<td>山师校区</td>
+			<td>理论组</td>
+			<td>ZhengWei</td>
+			<td>山艺-403</td>
+			<td>教师</td>
+			
+			<td>
+				<button type='button' class='xq_user_btn btn btn-info btn-xs' tel='2'>详细</button>
+				<button type='button' class='edit_user_btn btn btn-primary btn-xs' tel='2'>修改</button>
+				<button type='button' class='del_user_btn btn btn-danger btn-xs' tel='2'>删除</button>
+			</td>
+		</tr>
+		
+		
+		<tr>
+			<td>2</td>
+			<td>钟伟</td>		
+			<td>18766409464</td>
+			<td>招生中心</td>
+			<td>招生</td>
+			<td>ZhengWei</td>
+			<td></td>
+			<td>招生老师</td>
+			
+			<td>
+				<button type='button' class='xq_user_btn btn btn-info btn-xs' tel='2'>详细</button>
+				<button type='button' class='edit_user_btn btn btn-primary btn-xs' tel='2'>修改</button>
+				<button type='button' class='del_user_btn btn btn-danger btn-xs' tel='2'>删除</button>
+			</td>
+		</tr>
+		
+		
+		
+		
+
+                            </tbody>
+                        </table>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5" class="footable-visible">
+                                     <ul class='pagination pull-right'><li class='footable-page-arrow disabled'><a data-page='first'>«</a></li><li class='footable-page-arrow disabled'><a data-page='prev'>‹</a></li><li class='footable-page active'><a data-page='1'>1</a></li><li class='footable-page'><a data-page='2' href='table_Userx.asp?PN=2'>2</a></li><li class='footable-page'><a data-page='3' href='table_Userx.asp?PN=3'>3</a></li><li class='footable-page'><a data-page='4' href='table_Userx.asp?PN=4'>4</a></li><li class='footable-page'><a data-page='5' href='table_Userx.asp?PN=5'>5</a></li><li class='footable-page'><a data-page='6' href='table_Userx.asp?PN=6'>6</a></li><li class='footable-page-arrow'><a data-page='next' href='table_Userx.asp?PN=2'>›</a></li><li class='footable-page-arrow'><a data-page='next' href='table_Userx.asp?PN=14'>»</a></li>　<li class='footable-page-arrow'>1</li>/<li class='footable-page-arrow'>14</li>　<li class='footable-page-arrow'>记录：140</li>　</ul
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+        <!-- End Panel Other -->
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+
+    <!-- Bootstrap table -->
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+   <!-- layer javascript -->
+    <script src="js/plugins/layer/layer.min.js"></script>
+    
+    <!-- Peity -->
+    <script src="js/demo/bootstrap-table-demo.js"></script>
+    <!-- layerDate plugin javascript -->
+    <script src="js/plugins/layer/laydate/laydate.js"></script>
+    <script>
+        //外部js调用
+        //点击查看员工详情
+        $('.xq_user_btn').click(function(){
+			uId=$(this).attr('tel');
+            parent.layer.open({
+                type: 2,
+                title: '员工信息',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['800px', '550px'],
+                content: './table_user_show.html'
+            });
+        });
+        
+        //点击新增
+        
+        $('.btn_user_add').click(function(){
+            parent.layer.open({
+                type: 2,
+                title: '新增员工',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['800px', '550px'],
+                content: './table_user_add.html' //iframe的url
+            });
+        });
+        
+        //点击修改
+        
+        $('.edit_user_btn').click(function(){
+			uId=$(this).attr('tel');
+            parent.layer.open({
+                type: 2,
+                title: '员工修改',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['800px', '550px'],
+                content: './table_user_edit.html'
+				//iframe的url
+            });
+        });
+        
+        //点击删除
+        
+        /*$('.del_user_btn').click(function(){
+            parent.layer.confirm('删除员工', {
+                btn: ['删除','取消'], //按钮
+                shade: false //不显示遮罩
+            }, function(){
+                parent.layer.msg('删除成功', {icon: 1});
+            }, function(){
+               
+            });
+        });*/
+
+
+        $('.del_user_btn').click(function(){
+			event.stopPropagation();
+			var url = "table_user_edit.asp?action=delete&uId=" + $(this).attr('tel');
+			parent.layer.confirm('删除该员工', {
+				btn: ['确定', '取消'],
+				shade: false
+			}, function () {
+				$.ajax({
+					type: "post",
+					url: url,
+					data: null,
+					dataType: "json",
+					async: false,
+					success: function (data) {
+						if (data.success) {
+							parent.layer.msg('删除成功', {
+								icon: 1,
+								time: 500
+								},function () {
+									window.parent.tiaozhuan('table_userx.asp?PN='+1);
+								})
+						   };
+					}
+				});
+			});
+        });
+		$(function(){
+			
+		})
+
+    </script>
+</body>
+</html>

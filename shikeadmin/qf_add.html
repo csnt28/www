@@ -1,0 +1,256 @@
+
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>添加员工</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+		<link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+		<link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/style.css?v=4.1.0" rel="stylesheet">
+		
+	</head>
+	<body class="gray-bg">
+		<div class="wrapper wrapper-content">
+				   <div class="row">
+				<div class="col-sm-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>基础信息</h5>
+						</div>
+						<div class="ibox-content">
+							<form method="post" class="form-horizontal" action="?action=save" onsubmit="return checkInput();">
+								<div class="form-group">
+									<label class="col-sm-2 control-label">姓名</label>
+									<div class="col-sm-3">
+										<input type="text" name="xingming" id="xingming" class="form-control" value="张三" readonly>
+										
+									</div>
+									<label class="col-sm-2 control-label">校区：</label>
+									<div class="col-sm-3">
+										<select class="form-control m-b" name="bumen" id="bumen" onchange="javascript:getTrade(this.options[this.selectedIndex].value);">
+											<option value="0" >未选择</option>
+											<option value=22 selected>山师校区</option>
+											<option value=22>山艺校区</option>
+											<option value=22>山大校区</option>
+											
+										</select>
+										
+									</div>
+									
+								</div>
+								
+								
+								<div class="form-group">
+								<label class="col-sm-2 control-label">班型：</label>
+									<div class="col-sm-3">
+										<select class="form-control m-b" name="bumen" id="bumen" onchange="javascript:getTrade(this.options[this.selectedIndex].value);">
+											<option value="0" >未选择</option>
+											<option value=22 selected>试学</option>
+											<option value=22>长期班</option>
+											<option value=22>五一活动</option>
+											
+											
+											
+										</select>
+										
+									</div>
+								<label class="col-sm-2 control-label">招生老师：</label>
+									<div class="col-sm-3">
+										<select class="form-control m-b" name="bumen" id="bumen" onchange="javascript:getTrade(this.options[this.selectedIndex].value);">
+											<option value="0" >未选择</option>
+											<option value=22 selected>刘一鸣</option>
+											<option value=22>钟伟</option>
+											<option value=22>钟伟</option>
+											<option value=22>钟伟</option>
+											<option value=22>钟伟</option>
+											<option value=22>钟伟</option>
+											<option value=22>钟伟</option>
+											<option value=22>钟伟</option>
+											<option value=22>钟伟</option>
+											<option value=22>钟伟</option>
+											<option value=22>钟伟</option>
+											<option value=22>钟伟</option>
+											
+										</select>
+										
+									</div>
+									</div>
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">声乐</label>
+									<div class="col-sm-2">
+										<input type="text" name="xingming" id="xingming" class="form-control" value="美声" readonly>
+									</div>
+									<label class="col-sm-2 control-label">器乐</label>
+									<div class="col-sm-2">
+										<input type="text" name="xingming" id="xingming" class="form-control" value="钢琴" readonly>
+									</div>
+									<label class="col-sm-2 control-label">理论</label>
+									<div class="col-sm-2">
+										<input type="text" name="xingming" id="xingming" class="form-control" value="理论" readonly>
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">试课顺序：</label>
+									<label class="col-sm-1 control-label">声乐</label>
+									<div class="col-sm-2">
+										<input type="number" name="xingming" id="xingming" class="form-control" value="">
+									</div>
+									<label class="col-sm-1 control-label">器乐</label>
+									<div class="col-sm-2">
+										<input type="number" name="xingming" id="xingming" class="form-control" value="">
+									</div>
+									<label class="col-sm-1 control-label">理论</label>
+									<div class="col-sm-2">
+										<input type="number" name="xingming" id="xingming" class="form-control" value="">
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								 
+								<div class="form-group">
+									<label class="col-sm-2 control-label">声乐试课老师</label>
+									<div class="col-sm-4">
+										<select class="form-control m-b" name="bumen" id="bumen" onchange="javascript:getTrade(this.options[this.selectedIndex].value);">
+											<option value="0">未选择</option>
+											<option value=22>刘宇航</option>
+											<option value=22>刘宇航</option>
+											<option value=22>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+										</select>
+									</div>
+									<label class="col-sm-2 control-label">声乐试课琴房</label>
+									<div class="col-sm-4" id="Stradediv">
+										<select class="form-control m-b" name="zu" id="zu">
+											<option value="0">未选择</option>
+                                            <option value="">山艺校区-401</option>
+                                            <option value="">山艺校区-401</option>
+                                            <option value="">山师校区-401</option>
+                                            <option value="">山师校区-401</option>
+                                            <option value="">山师校区-401</option>
+                                           
+											
+										</select>
+									</div>
+								</div>
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">器乐试课老师</label>
+									<div class="col-sm-4">
+										<select class="form-control m-b" name="bumen" id="bumen" onchange="javascript:getTrade(this.options[this.selectedIndex].value);">
+											<option value="0">未选择</option>
+											<option value=22>刘宇航</option>
+											<option value=22>刘宇航</option>
+											<option value=22>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+										</select>
+									</div>
+									<label class="col-sm-2 control-label">器乐试课琴房</label>
+									<div class="col-sm-4" id="Stradediv">
+										<select class="form-control m-b" name="zu" id="zu">
+											<option value="0">未选择</option>
+                                            <option value="">山艺校区-401</option>
+                                            <option value="">山艺校区-401</option>
+                                            <option value="">山师校区-401</option>
+                                            <option value="">山师校区-401</option>
+                                            <option value="">山师校区-401</option>
+                                           
+											
+										</select>
+									</div>
+								</div>
+								
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">理论试课老师</label>
+									<div class="col-sm-4">
+										<select class="form-control m-b" name="bumen" id="bumen" onchange="javascript:getTrade(this.options[this.selectedIndex].value);">
+											<option value="0">未选择</option>
+											<option value=22>刘宇航</option>
+											<option value=22>刘宇航</option>
+											<option value=22>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+											<option value=16>刘宇航</option>
+										</select>
+									</div>
+									<label class="col-sm-2 control-label">理论试课琴房</label>
+									<div class="col-sm-4" id="Stradediv">
+										<select class="form-control m-b" name="zu" id="zu">
+											<option value="0">未选择</option>
+                                            <option value="">山艺校区-401</option>
+                                            <option value="">山艺校区-401</option>
+                                            <option value="">山师校区-401</option>
+                                            <option value="">山师校区-401</option>
+                                            <option value="">山师校区-401</option>
+                                           
+											
+										</select>
+									</div>
+								</div>
+								
+								
+								
+								
+								
+								<div class="hr-line-dashed"></div>
+								<div class="form-group">
+									<div class="col-sm-4 col-sm-offset-2">
+										<button class="btn btn-primary" type="submit">分配</button>
+										<button class="btn btn-white" type="submit">取消</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- 全局js -->
+		<script src="js/jquery.min.js?v=2.1.4"></script>
+		<script src="js/bootstrap.min.js?v=3.3.6"></script>
+		<!-- Peity -->
+		<script src="js/plugins/peity/jquery.peity.min.js"></script>
+		<!-- 自定义js -->
+		<script src="js/content.js?v=1.0.0"></script>
+		<!-- Peity -->
+		<script src="js/demo/peity-demo.js"></script>
+	</body>
+	</html>
+	

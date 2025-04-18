@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>配置</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    
+
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-12">
+                
+                
+                
+                 <div class="col-sm-4">
+                    
+                    <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>默认学年设置</h5>
+                       
+                    </div>
+                    <div class="ibox-content">
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                2020 
+                                
+                                <div class="pull-right">
+                                   <button type="button" class="btn btn-info btn-xs btn_xs_3_read">编辑</button>
+                               
+                                </div>
+                                
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    
+                    <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>校区配置</h5>
+                        <div class="pull-right">
+ <button type="button" class="btn_xs_1_add btn btn-info btn-xs">新增</button>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                山大校区 
+                                
+                                <div class="pull-right">
+                                   <button type="button" class="btn btn-info btn-xs btn_xs_1_read">编辑</button>
+                                <button type="button" class="btn_xs_del btn btn-danger btn-xs">删除</button>
+                                </div>
+                                
+                            </a>
+                            <a href="#" class="list-group-item">
+                                山师校区
+                                <div class="pull-right">
+                                    <button type="button" class="btn btn-info btn-xs btn_xs_1_read">编辑</button>
+                                <button type="button" class="btn_xs_del btn btn-danger btn-xs">删除</button>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                山艺校区
+                                <div class="pull-right">
+                                    <button type="button" class="btn btn-info btn-xs btn_xs_1_read">编辑</button>
+                                <button type="button" class="btn_xs_del btn btn-danger btn-xs">删除</button>
+                                </div>
+                            </a>
+                           
+                           
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                    
+                </div>
+                
+                <div class="col-sm-4">
+                    
+                    <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>班型配置</h5>
+                        <div class="pull-right">
+ <button type="button" class="btn_xs_2_add btn btn-info btn-xs">新增</button>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                试学 
+                                
+                                <div class="pull-right">
+                                   <button type="button" class="btn btn-info btn-xs btn_xs_2_read">编辑</button>
+                                <button type="button" class="btn_xs2_del btn btn-danger btn-xs">删除</button>
+                                </div>
+                                
+                            </a>
+                            <a href="#" class="list-group-item">
+                                长期班
+                                <div class="pull-right">
+                                    <button type="button" class="btn btn-info btn-xs btn_xs_2_read">编辑</button>
+                                <button type="button" class="btn_xs2_del btn btn-danger btn-xs">删除</button>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                五一活动
+                                <div class="pull-right">
+                                    <button type="button" class="btn btn-info btn-xs btn_xs_2_read">编辑</button>
+                                <button type="button" class="btn_xs2_del btn btn-danger btn-xs">删除</button>
+                                </div>
+                            </a>
+                           
+                           
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                    
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+
+    <!-- layer javascript -->
+    <script src="js/plugins/layer/layer.min.js"></script>
+    <script>
+    
+  $('.btn_xs_3_add').click(function(){
+            parent.layer.open({
+                type: 2,
+                title: '学年配置',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['400px', '300px'],
+                content: './year_add.html' //iframe的url
+            });
+            
+        });
+        
+        
+        $('.btn_xs_3_read').click(function(){
+            parent.layer.open({
+                type: 2,
+                title: '学年配置',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['400px', '300px'],
+                content: './year_edit.html' //iframe的url
+            });
+            
+        });
+        
+        
+
+        $('.btn_xs3_del').click(function(){
+            parent.layer.confirm('删除', {
+                btn: ['删除','取消'], //按钮
+                shade: false //不显示遮罩
+            }, function(){
+                parent.layer.msg('删除成功', {icon: 1});
+            }, function(){
+               
+            });
+            
+        });
+        
+
+       $('.btn_xs_1_add').click(function(){
+            parent.layer.open({
+                type: 2,
+                title: '配置',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['400px', '300px'],
+                content: './school_add.html' //iframe的url
+            });
+            
+        });
+        
+        
+        $('.btn_xs_1_read').click(function(){
+            parent.layer.open({
+                type: 2,
+                title: '配置',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['400px', '300px'],
+                content: './school_edit.html' //iframe的url
+            });
+            
+        });
+        
+        
+
+        $('.btn_xs_del').click(function(){
+            parent.layer.confirm('删除', {
+                btn: ['删除','取消'], //按钮
+                shade: false //不显示遮罩
+            }, function(){
+                parent.layer.msg('删除成功', {icon: 1});
+            }, function(){
+               
+            });
+            
+        });
+        
+        
+        
+         $('.btn_xs_2_add').click(function(){
+            parent.layer.open({
+                type: 2,
+                title: '配置',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['400px', '300px'],
+                content: './school2_add.html' //iframe的url
+            });
+            
+        });
+        
+        
+        $('.btn_xs_2_read').click(function(){
+            parent.layer.open({
+                type: 2,
+                title: '配置',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['400px', '300px'],
+                content: './school2_edit.html' //iframe的url
+            });
+            
+        });
+        
+        
+
+        $('.btn_xs2_del').click(function(){
+            parent.layer.confirm('删除', {
+                btn: ['删除','取消'], //按钮
+                shade: false //不显示遮罩
+            }, function(){
+                parent.layer.msg('删除成功', {icon: 1});
+            }, function(){
+               
+            });
+            
+        });
+        
+        
+        
+    </script>
+    
+
+</body>
+
+</html>
